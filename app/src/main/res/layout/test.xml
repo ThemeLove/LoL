@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="270dp"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zanlabs.widget.infiniteviewpager.InfiniteViewPager
+            android:id="@+id/home_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <com.zanlabs.widget.infiniteviewpager.indicator.CirclePageIndicator
+            android:id="@+id/home_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="4dp"
+            app:fillColor="#fafafa"
+            app:pageColor="#aaaaaa"
+            app:strokeWidth="0dp"/>
+
+        <RelativeLayout
+            android:layout_below="@id/home_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/layout_top"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
